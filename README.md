@@ -36,3 +36,7 @@ The dataset used to test was the CTA scan taken from the dongyang hospital and t
 
 Hereby an image of the CTA scan and the later results with and without the vessel information. 
 By changing the different materials, the results change.
+
+
+Here an example of the CTA scan of the dongyang dataset, visualized in the imfusion software.
+[test_image](https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/test3.png)
