@@ -31,7 +31,7 @@ to install it in your environment.
 
 ## DATA
 
-The dataset used to test was the CTA scan taken from the dongyang hospital and the KiTs challenge [;ink](https://pubmed.ncbi.nlm.nih.gov/35059483/)
+The dataset used to test was the CTA scan taken from the dongyang hospital and the KiTs challenge [link](https://www.sciencedirect.com/science/article/pii/S2352340922000130)
 
 
 Hereby an image of the CTA scan and the later results with and without the vessel information. 
