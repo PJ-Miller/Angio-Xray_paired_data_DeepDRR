@@ -38,5 +38,5 @@ Hereby an image of the CTA scan and the later results with and without the vesse
 By changing the different materials, the results change.
 
 
-Here an example of the CTA scan of the dongyang dataset, visualized in the imfusion software.
-![test_image](https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/test3.png)
+Here an example of the CTA scan of the dongyang dataset, visualized in the imfusion software by enhancing the vessel information.
+![test_image](https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png)
