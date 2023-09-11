@@ -1,0 +1,11 @@
+polyaxon-client==0.6.1
+pycuda
+pydicom
+scikit-image
+numpy
+torch
+torchvision
+nibabel
+pynrrd
+Pillow
+
