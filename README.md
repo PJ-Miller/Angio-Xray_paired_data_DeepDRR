@@ -44,5 +44,5 @@ Here an example of the CTA scan of the dongyang dataset, visualized in the imfus
 
  <figure>
   <img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=20% height=  20%>
-  <figcaption>CTA</figcaption>
+  <figcaption>CTA scan visualized in imfusion</figcaption>
 </figure> 
