@@ -40,5 +40,5 @@ By changing the different materials, the results change.
 
 Here an example of the CTA scan of the dongyang dataset, visualized in the imfusion software by enhancing the vessel information.
 
-<img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=20% height=20%>
+<img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=20% height=  20%> <em>CTA scan</em>
 
