@@ -34,6 +34,8 @@ to install it in your environment.
 The dataset used to test was the CTA scan taken from the dongyang hospital and the KiTs challenge [link](https://www.sciencedirect.com/science/article/pii/S2352340922000130)
 
 
+## RESULTS
+
 Hereby an image of the CTA scan and the later results with and without the vessel information. 
 By changing the different materials, the results change.
 
