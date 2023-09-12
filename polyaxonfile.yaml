@@ -1,11 +1,6 @@
 version: 1
 kind: experiment
 build:
-  # image: 'javiestvi/ddrr_basic:firsttry'
-  # image: 12.1.0-devel-ubuntu18.04
-  # image: bryankp/pycuda:latest
-  # image: nvidia/cuda:11.8.0-devel-ubuntu20.04
-
   image: nvidia/cuda:11.1.1-devel-ubuntu20.04
   build_steps:
     - gcc --version
@@ -22,14 +17,9 @@ build:
     - pip3 list
     - nvcc --version
 
-  # image: pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
-  # build_steps:
-  #   - pip install -r requirements.txt
-  #   - pip install deepdrr
-
 
   env_vars:
-    - ['TORCH_HOME', "/data1/brainlab_project/vessel/inpainting/"]
+    - ['TORCH_HOME', "/path_to_files/"]
 
 environment:
   resources:
@@ -44,15 +34,15 @@ environment:
       limits: 1
 
 declarations:
-  volume_path: '/brainlab_project/vessel/inpainting/CT_raw/Dongyang/D1/D1.nrrd'
-  artery_path: '/brainlab_project/vessel/inpainting/CT_raw/Dongyang/D1/D1.seg.nrrd'
+  volume_path: '/path_to_data/D1.nrrd'
+  artery_path: '/path_to_segem_map_data/D1.seg.nrrd'
   drr_path: ''
   vessel_bool: 1
   alpha: 90
   beta: 90
 
 run:
-  cmd: ln -s /data1/brainlab_project/vessel/inpainting/CT_raw/Dongyang/D1 /opt/data  & ls ./configFiles/ &   python3 ./run.py  --volume_path={{ volume_path }} \
+  cmd: ln -s path_to_data/ /opt/data  & ls ./configFiles/ &   python3 ./run.py  --volume_path={{ volume_path }} \
                     --artery_path={{ artery_path }} \
                     --drr_path={{ drr_path }} \
                     --vessel_bool={{ vessel_bool }} \
@@ -60,46 +50,3 @@ run:
                     --beta={{ beta }} \
 
 
-# ---
-# version: 1
-
-# kind: experiment
-
-# framework: pytorch
-
-# tags: [examples]
- 
-# build:
-#   image: pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
-#   build_steps:
-#     - pip install -r requirements.txt
-#   env_vars:
-#     - ['TORCH_HOME', "/data/PytorchModelZoo"]
-
-# environment:
-#   resources:
-#     cpu:
-#       requests: 3
-#       limits: 3
-#     memory:
-#       requests: 1024
-#       limits: 4098
-#     gpu:
-#       requests: 1
-#       limits: 1
-
-# declarations:
-#   batch_size_train: 4
-#   batch_size_test: 4
-#   epochs: 5
-#   lr: 0.001
-#   momentum: 0.9
-#   log_interval: 100
-
-# run:
-#   cmd: python -u run.py  --batch-size={{ batch_size_train }} \
-#                          --test-batch-size={{ batch_size_test }} \
-#                          --epochs={{ epochs }} \
-#                          --lr={{ lr }} \
-#                          --momentum={{ momentum }}
-#                          --log-interval={{ log_interval }}
