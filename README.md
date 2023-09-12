@@ -43,7 +43,7 @@ Here an example of the CTA scan of the dongyang dataset, visualized in the imfus
 <!-- <img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=20% height=  20%> <em>CTA scan</em> -->
 
            CTA scan visualized        |      DRR with vessel infromation      |   DRR without vessel information      
-:------------------------------------:|:------------------------------------: |:------------------------------------:
+:---------------------------------------:|:---------------------------------------: |:---------------------------------------:
 <img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=31% height=  31%>  |<img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=31% height=  31%>  | <img src="https://github.com/PJ-Miller/Angio-Xray_paired_data_DeepDRR/blob/main/images/CTA_scan.png" width=31% height=  31%>
 
 
